@@ -9,13 +9,13 @@ type ContainerProps<E extends ElementType> = {
 function Container<E extends ElementType = 'div'>({
   as,
   children,
+  className,
   ...props
 }: ContainerProps<E>) {
   const Component = as ?? 'div';
-  const className = props.className;
 
   return (
-    <Component className={clsx(styles.container, className)} {...props}>
+    <Component className={clsx(styles['container'], className)} {...props}>
       {children}
     </Component>
   );
