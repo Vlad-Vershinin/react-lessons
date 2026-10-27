@@ -1,6 +1,6 @@
 import { writeFile, mkdir } from 'fs/promises';
 import { join } from 'path';
-import { paths } from './src/consts';
+import { paths } from './src/consts.js';
 
 const pathToPascalCase = (path) => {
   let result = '';
@@ -40,14 +40,14 @@ async function createStructures(filesToCreate) {
       const fileName = `${number}-${name}`;
 
       const itemFolder = join(baseDir, fileName);
-      const filePath = join(itemFolder, `${fileName}.jsx`);
+      const filePath = join(itemFolder, `${fileName}.tsx`);
       const content = componentTemplate(name, index + 1);
 
       await mkdir(itemFolder, { recursive: true });
 
       await writeFile(filePath, content, 'utf8');
       console.log(
-        `✅ Создана папка и файл: output/${fileName}/${fileName}.jsx`,
+        `✅ Создана папка и файл: output/${fileName}/${fileName}.tsx`,
       );
     });
 
@@ -64,7 +64,7 @@ const importTemplate = (filename, prefix) => {
 
 async function createIndexFile(paths, pathToPascalCase) {
   const baseDir = join(process.cwd(), 'output');
-  const indexFilePath = join(baseDir, 'PathsList.jsx');
+  const indexFilePath = join(baseDir, 'PathsList.tsx');
 
   try {
     await mkdir(baseDir, { recursive: true });
@@ -105,7 +105,7 @@ export default PathsList;`;
 
 async function createLinksFile(paths, pathToPascalCase) {
   const baseDir = join(process.cwd(), 'output');
-  const indexFilePath = join(baseDir, 'Links.jsx');
+  const indexFilePath = join(baseDir, 'Links.tsx');
 
   try {
     await mkdir(baseDir, { recursive: true });
@@ -133,11 +133,11 @@ async function createLinksFile(paths, pathToPascalCase) {
 
 // Корректный запуск обеих операций последовательно
 async function main() {
-  const pascalCaseNames = paths.map(pathToPascalCase);
+  const pascalCaseNames = paths.map(path => pathToPascalCase(path.path));
 
-  // await createStructures(pascalCaseNames);
+  await createStructures(pascalCaseNames);
   // await createIndexFile(paths, pathToPascalCase);
-  await createLinksFile(paths, pathToPascalCase);
+  // await createLinksFile(paths, pathToPascalCase);
 }
 
 main();
