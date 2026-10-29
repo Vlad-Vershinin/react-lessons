@@ -19,3 +19,5 @@ Workflow публикует ветку main. Адрес: https://Vlad-Vershinin.
 Навигация использует HashRouter, поэтому ссылки уроков работают на GitHub Pages.
 
 Установка расширения React DevTools (урок 3) выполняется отдельно в браузере.
+
+Предыдущая версия react-lessons сохранена в legacy/.
