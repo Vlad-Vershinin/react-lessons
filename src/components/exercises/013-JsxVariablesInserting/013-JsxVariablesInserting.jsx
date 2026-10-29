@@ -1,0 +1,5 @@
+function JsxVariablesInserting() {
+    const str1 = 'text1', str2 = 'text1';
+    return <div><p>{str1}</p><p>{str2}</p></div>;
+}
+export default JsxVariablesInserting;

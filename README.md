@@ -21,3 +21,5 @@ Workflow публикует ветку main. Адрес: https://Vlad-Vershinin.
 Установка расширения React DevTools (урок 3) выполняется отдельно в браузере.
 
 Предыдущая версия react-lessons сохранена в legacy/.
+
+Рабочая тетрадь использует JavaScript и JSX, без TypeScript.
