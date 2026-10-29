@@ -1,5 +1,6 @@
-function JsxTagsIntro() {
-  return <div>18. JsxTagsIntro</div>;
-}
 
+
+function JsxTagsIntro(){
+const str=<p>text</p>; return <div>{str}</div>;
+}
 export default JsxTagsIntro;

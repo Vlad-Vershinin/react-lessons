@@ -1,5 +1,6 @@
-function ComponentsChild() {
-  return <div>82. ComponentsChild</div>;
-}
 
+function Employee({name,surname,patronymic,salary}:{name:string;surname:string;patronymic:string;salary:number}){return <p>{surname} {name} {patronymic}: {salary} ₽</p>;}
+function ComponentsChild(){
+const employees=[{name:'Иван',surname:'Иванов',patronymic:'Иванович',salary:50000},{name:'Анна',surname:'Петрова',patronymic:'Ивановна',salary:60000},{name:'Пётр',surname:'Сидоров',patronymic:'Петрович',salary:70000}];return <>{employees.map(e=><Employee key={e.surname} {...e}/>)}</>;
+}
 export default ComponentsChild;

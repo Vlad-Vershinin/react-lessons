@@ -1,5 +1,6 @@
-function JsxReturningUnclosed() {
-  return <div>11. JsxReturningUnclosed</div>;
-}
 
+
+function JsxReturningUnclosed(){
+return <input aria-label="Текст" />;
+}
 export default JsxReturningUnclosed;

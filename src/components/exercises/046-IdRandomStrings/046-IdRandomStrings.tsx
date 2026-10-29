@@ -1,5 +1,6 @@
-function IdRandomStrings() {
-  return <div>46. IdRandomStrings</div>;
-}
 
+
+function IdRandomStrings(){
+return <p>Случайные строковые id позволяют добавлять объекты на клиенте без ожидания сервера.</p>;
+}
 export default IdRandomStrings;

@@ -1,5 +1,6 @@
-function ConditionsLogicalAnd() {
-  return <div>29. ConditionsLogicalAnd</div>;
-}
 
+
+function ConditionsLogicalAnd(){
+const isAuth=true; return <div>{isAuth && <p>вы авторизованы</p>}</div>;
+}
 export default ConditionsLogicalAnd;

@@ -1,5 +1,6 @@
-function BasisIntro() {
-  return <div>1. BasisIntro</div>;
-}
 
+
+function BasisIntro(){
+return <p>React: компоненты, JSX и состояния.</p>;
+}
 export default BasisIntro;

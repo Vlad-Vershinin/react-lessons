@@ -1,5 +1,6 @@
-function JsxTagsCorrectness() {
-  return <div>23. JsxTagsCorrectness</div>;
-}
 
+
+function JsxTagsCorrectness(){
+return <table><tbody><tr><td>text1</td><td>text2</td></tr></tbody></table>;
+}
 export default JsxTagsCorrectness;

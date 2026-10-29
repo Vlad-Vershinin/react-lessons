@@ -1,5 +1,7 @@
-function ComponentsIntro() {
-  return <div>78. ComponentsIntro</div>;
-}
+import User from './User';
 
+
+function ComponentsIntro(){
+return <><User /></>;
+}
 export default ComponentsIntro;

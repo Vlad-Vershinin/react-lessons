@@ -1,5 +1,6 @@
-function BasisComponentResult() {
-  return <div>6. BasisComponentResult</div>;
-}
 
+
+function BasisComponentResult(){
+return <p>text</p>;
+}
 export default BasisComponentResult;

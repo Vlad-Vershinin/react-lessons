@@ -1,5 +1,6 @@
-function JsxTagsReturn() {
-  return <div>21. JsxTagsReturn</div>;
-}
 
+
+function JsxTagsReturn(){
+const str=<main>text</main>; return str;
+}
 export default JsxTagsReturn;

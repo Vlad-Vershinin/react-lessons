@@ -1,5 +1,6 @@
-function FunctionsIntro() {
-  return <div>31. FunctionsIntro</div>;
-}
 
+
+function FunctionsIntro(){
+function getDigitsSum(num: number) {return String(num).split('').reduce((sum,digit)=>sum+Number(digit),0);} return <p>{getDigitsSum(123)}</p>;
+}
 export default FunctionsIntro;

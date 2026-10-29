@@ -1,5 +1,6 @@
-function JsxTagsClosing() {
-  return <div>22. JsxTagsClosing</div>;
-}
 
+
+function JsxTagsClosing(){
+return <div><input /><br /><input /></div>;
+}
 export default JsxTagsClosing;
