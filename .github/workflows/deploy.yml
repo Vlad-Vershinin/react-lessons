@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - master # Укажите master, если ваша основная ветка называется так
+      - main
 
 # Разрешаем workflow менять содержимое GitHub Pages
 permissions:
@@ -51,3 +51,4 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
